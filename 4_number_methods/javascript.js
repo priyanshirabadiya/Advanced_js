@@ -6,4 +6,8 @@ let x = 120;
 
 // console.log((123 + 20).toString());
 
-document.getElementById("demo").innerHTML = x;
+
+x = 100 + "dsjk";
+
+
+document.getElementById("demo").innerHTML = typeof x;
