@@ -59,7 +59,7 @@
 
 
 
-
+// -------------------------------------------------------------------------------------------------------------------------------
 // let txt = "";
 // const fruits = ["banana","orange","mango"];
 // var any = 5;
@@ -141,7 +141,7 @@
 // let foreach =  arr.forEach(x => {
 //     return txt += x; //Undefined -> We can't return as direct value
 //     // txt = x * 2;    //[20,40]    -> Need to store in another variable  
-//     // console.log(txt);
+//     console.log(txt);
 // })
 // console.log(txt);
 
