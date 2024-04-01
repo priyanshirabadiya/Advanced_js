@@ -7,7 +7,7 @@ let x = 120;
 // console.log((123 + 20).toString());
 
 
-x = 100 + "dsjk";
+// x = 100 + "dsjk";
 
 
 document.getElementById("demo").innerHTML = typeof x;
