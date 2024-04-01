@@ -15,6 +15,9 @@ switch(day){
     case 5:
         day = "fri";
         break;
+    case 6:
+            day = "sat";
+            break;
     default:
         day = 'wrong choice';
         break;

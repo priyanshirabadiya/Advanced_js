@@ -9,11 +9,11 @@
 
 // Map
 
-// const fruits = new Map([
-//     ["apple",100],
-//     ["banana",200],
-//     ["orange",300]
-// ])
+const fruits = new Map([
+    ["apple",100],
+    ["banana",200],
+    ["orange",300]
+])
 
 // const fruits = new Map([
 //     ["apple",100],
