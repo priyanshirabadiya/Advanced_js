@@ -10,4 +10,4 @@ let x = 120;
 // x = 100 + "dsjk";
 
 
-document.getElementById("demo").innerHTML = typeof x;
+// document.getElementById("demo").innerHTML = typeof x;
