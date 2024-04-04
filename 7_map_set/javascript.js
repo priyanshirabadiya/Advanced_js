@@ -9,11 +9,11 @@
 
 // Map
 
-const fruits = new Map([
-    ["apple",100],
-    ["banana",200],
-    ["orange",300]
-])
+// const fruits = new Map([
+//     ["apple",100],
+//     ["banana",200],
+//     ["orange",300]
+// ])
 
 // const fruits = new Map([
 //     ["apple",100],
@@ -197,3 +197,11 @@ const fruits = new Map([
 
 
 // entries
+
+const mapp = new Map([
+    ["name","priyanshi"],
+    ["Rno",50]
+]);
+
+
+document.getElementById("demo").innerHTML = mapp.get("Rno");
