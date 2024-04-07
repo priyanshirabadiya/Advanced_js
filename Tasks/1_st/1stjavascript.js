@@ -412,13 +412,48 @@
 
 // 5. Factorial number
 
-let num = 5;
-let store;
-for(let i = 0 ; i < num ; i++)
-{
-        num *= (num - 1);
-}
-console.log(num);   
+// let num = 5;
+// let store = 1;
+// for(let i = 1 ; i <= num ; i++)
+// {
+//         store = store * i;
+// }
+// console.log(store);  
+
+
+
+// Fibonacci sereies
+
+// let a = 0 , b = 1 ,c = 1, n = 9; 
+// for(let i = 0 ; i < n ; i++)
+// {
+//         a = b; 
+//         b = c;
+//         console.log(c);
+//         c = a + b;  
+// }
+
+
+// JavaScript Array Programs
+
+// program to get first and last elemrnt in array
+
+let arr = [45, 89 , 78 , 66 , 2 , 4 , 56];
+
+
+let z =  arr.filter(() => {
+    return arr[0] + 'and' + arr.length[-1];
+})
+
+console.log(z);
+// let z = arr.shift();
+// let y = arr.pop();
+// console.log(y); 
+// console.log(z); 
+
+// let z = arr.splice(1,5);
+// console.log(arr);
+
 
 
 
