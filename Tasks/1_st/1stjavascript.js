@@ -1,3 +1,5 @@
+
+
 // Number programs ->generate random number
 // multiply by * for range in which you want to create rendom 
 
@@ -438,14 +440,14 @@
 
 // program to get first and last elemrnt in array
 
-let arr = [45, 89 , 78 , 66 , 2 , 4 , 56];
 
+// let arr = [45, 89 , 78 , 66 , 2 , 4 , 56];
 
-let z =  arr.filter(() => {
-    return arr[0] + 'and' + arr.length[-1];
-})
+// let z =  arr.filter(() => {
+//     return arr[0] + 'and' + arr.length[-1];
+// })
 
-console.log(z);
+// console.log(z);
 // let z = arr.shift();
 // let y = arr.pop();
 // console.log(y); 
@@ -454,6 +456,94 @@ console.log(z);
 // let z = arr.splice(1,5);
 // console.log(arr);
 
+
+// let arr = [45, 89 , 78 , 66 , 2 , 4 , 56];
+// arr.unshift(56);
+// arr.splice(0 ,0, 3)
+// console.log(arr);
+
+// arr = [56 , ...arr];
+// console.log(arr);
+
+// let x = (val) => {
+//     return val > 1;
+// }
+
+// let arr = [10 , 56 , 89 , -1 , 656].filter(x);
+// console.log(arr);
+
+
+
+// let arr = [45, 89, 78, 66, 2, 4, 56];
+
+// let rev = [];
+
+// arr.forEach((element)=>{
+//     rev.unshift(element);
+// })
+
+// console.log(rev);
+
+
+
+// empty array in js
+// arr.splice(0,7);
+// let z = arr.slice(7);
+// console.log(arr);
+// console.log(z);
+
+
+// let fruits_array = [
+//     "mango",
+//     "banana",
+//     "apple",
+//     "pineapple",
+//     "pomegranate",
+//     "orange",
+// ];
+
+
+// let val = (check) => {
+//     for (let i = 0; i < fruits_array.length; i++) {
+//         let curval = fruits_array[i];
+//         if (check === curval) {
+//             return check + 'index is' + i;
+//         }
+//     }
+//     return check + ' not present in array';
+// }
+
+// console.log(val("banana"));
+
+
+
+// let arr = [45, 89, 78, 66, 2, 4, 56];
+
+// let index = 2 ;
+// let eleent = 458;
+
+// arr.splice(index, 0 , eleent);
+// console.log(arr);
+
+// let num = 4563;
+
+// let x = Array.from(num.toString());
+//  x = x.map((x)=>{
+//     return Number(parseInt(x))
+// })
+// console.log(x); // Output: [4, 5, 6, 3]
+
+
+// sum of element 
+
+let arr = [45, 89, 78, 66, 2, 4, 56];
+
+for (let i = 0; i < arr.length; i++) {
+    let sum = arr.map((element) => {
+        return element[i] + element[i + 1];
+    })
+}
+console.log(sum);
 
 
 
