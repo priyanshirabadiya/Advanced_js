@@ -534,17 +534,60 @@
 // console.log(x); // Output: [4, 5, 6, 3]
 
 
-// sum of element 
+// let arr = [1, 2, 3 , 89 , 85];
+// let sum = 0;
 
-let arr = [45, 89, 78, 66, 2, 4, 56];
+// for (let i = 0; i < arr.length; i++) {
 
-for (let i = 0; i < arr.length; i++) {
-    let sum = arr.map((element) => {
-        return element[i] + element[i + 1];
-    })
-}
-console.log(sum);
+//     sum = sum + arr[i]; 
+
+// }
+
+// console.log(sum);
 
 
+
+// sort in alphanethical order
+// let arr = [
+//     'banana',
+//     'kiwi',
+//     'apple',
+//     'banana',
+//     'tarbuch'
+// ];
+
+// let arr2 = [
+//     'banana',
+//     'kiwi',
+//     'apple',
+//     'banana',
+//     'tarbuch'
+// ];
+
+// function filter(arr, arr2) {
+//     const setArr2 = new Set(arr2);
+//     return arr.filter((item) => setArr2.has(item));
+// }
+
+// console.log(filter(arr, arr2));
+
+
+// let x = arr.sort();
+// console.log(x);
+
+
+// function removed(arr){
+//     return arr.filter((item,index)=>arr.indexOf(item) == index);
+// }
+
+// console.log(removed(arr));
+
+
+// replace array item
+
+let arr = ['banana' , 'kiwi' , 'stoberry' , 'apple'];
+// let replace = arr.replace('banana','mango');
+arr[0] = 'mango';
+console.log(arr);
 
 
