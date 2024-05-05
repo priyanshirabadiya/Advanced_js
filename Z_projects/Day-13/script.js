@@ -46,9 +46,8 @@ btn.addEventListener("click", () => {
     if (currentMode == 'dark') {
         dark();
     }
-    else{
+    else {
         light();
-    
     }
 }
 )

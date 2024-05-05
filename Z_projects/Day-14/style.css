@@ -1,74 +1,138 @@
- * {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
-  background-color: #DBD3D8;
-  text-align: center;
+  height: 100vh;
+  width: 100vw;
 }
 
-.container {
-  height: 70vh;
+.background {
+  width: 100%;
+  height: 100%;
+  background-color: #DBD3D8;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.message-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #191825;
+  z-index: 10;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2.4rem;
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.message {
+  width: 50%;
+  text-align: center;
+  font-size: 8rem;
+  color: white;
+}
+
+.new-btn {
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: #6c6b6b;
+  color: #fff;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.primary-heading {
+  font-size: 4.8rem;
+  color: white;
+  text-align: center;
+  padding-top: 2.4rem;
+  position: fixed;
+  top: 2rem;
+  color: black;
 }
 
 .game {
   height: 48vmin;
-  width: 60vmin;
+  width: 400px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 1px;
+  gap: 5px;
 }
 
-.box {  
+.box {
+  color: black !important;
   height: 110px;
   width: 110px;
-  margin: 3px !important;
+  margin: 2px !important;
   border-radius: 10px;
   border: 0;
   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
   cursor: pointer;
   font-size: 8vmin;
-  background-color: #ffffc7;
 }
 
-#reset-btn {
+.box:focus{
+  background-color: white !important;
+}
+
+.box:hover {
+  font-weight: 600;
+  scale: 1.03;
+}
+
+.actions {
+  margin-top: 2.4rem;
+  text-align: center;
+}
+
+.reset-btn {
   padding: 1rem;
-  font-size: 1.25rem;
-  background-color: #191913;
+  font-size: 2rem;
+  background-color: #6c6b6b;
   color: #fff;
   border-radius: 1rem;
   border: none;
+  cursor: pointer;
+  font-weight: bold;
 }
 
-#new-btn {
-  padding: 1rem;
-  font-size: 1.25rem;
-  background-color: #191913;
-  color: #fff;
-  border-radius: 1rem;
-  border: none;
+element.style {
+  background-color: white !important;
 }
 
-#msg {
-  color: #ffffc7;
-  font-size: 5vmin;
-}
 
-.msg-container {
-  height: 100vmin;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 4rem;
-}
 
-.hide {
-  display: none;
-}
+
+
+
+
+
+
