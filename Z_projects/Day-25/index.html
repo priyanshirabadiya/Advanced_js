@@ -1,0 +1,147 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter Project | Using API</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="background">
+        <div class="main-container container">
+            <h1 class="primary-heading">Currency Converter</h1>
+            <form action="" class="form">
+                <div class="sub-container">
+                    <div class="input-div">
+                        <label for="amount-input" class="amount-label label">Enter Amount</label>
+                        <input type="number" name="amount-input" id="amount-input" placeholder="Enter the amount." />
+                    </div>
+                    <div class="country-div">
+                        <div class="dropdown-div" id="from-dropdown-div">
+                            <label for="from-option" class="dropdown-label label" id="from-label">From:
+                            </label>
+                            <div class="select-wrapper">
+                                <img src="https://flagsapi.com/US/flat/64.png" alt="country flag" class="flag-img" />
+                                <select name="from-option" id="from-option" class="dropdown-select">
+                                    <option value="" disabled class="dropdown-option">
+                                        Select the country.
+                                    </option>
+                                    <option value="IN" class="dropdown-option">INR</option>
+                                    <option value="USD" class="dropdown-option" selected>
+                                        USD
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-arrow-right-arrow-left exchange-icon"></i>
+                        <div class="dropdown-div" id="to-dropdown-div">
+                            <label for="to-option" class="dropdown-label label" id="to-label">To:
+                            </label>
+                            <div class="select-wrapper">
+                                <img src="https://flagsapi.com/IN/flat/64.png" alt="country flag" class="flag-img" />
+                                <select name="to-option" id="to-option" class="dropdown-select">
+                                    <option value="" disabled selected class="dropdown-option">
+                                        Select the country.
+                                    </option>
+                                    <option value="IN" class="dropdown-option" selected>
+                                        INR
+                                    </option>
+                                    <option value="USD" class="dropdown-option">USD</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-div">
+                        <p class="result">1 USD = 85 INR</p>
+                    </div>
+                </div>
+
+                <button type="submit" class="button">Get Exchange Rate</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js" ></script>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="flex justify-center  ">
+        <div class="card h-auto w-[30rem] pb-[1.2rem] rounded bg-[#B1A9B1]  ">
+            <h1 class="font-bold text-[2rem] mx-10 text-center mt-[2rem]">Convert USD to INR</h1>
+            <div>
+                <form action="" class="flex justify-center">
+                    <input type="text" class="text rounded " id="taken-input" >
+                </form>
+            </div>
+
+            <div class="country-div  ">
+                <div class="dropdown-div mx-24 flex justify-between" id="from-dropdown-div">
+                    <div class="flex justify-center  ">
+                        <label for="from-option" class="dropdown-label mt-2 absolute label font-bold "
+                            id="from-label">From:</label>
+                        <div class="select-wrapper mt-7 ">
+                            <img src="https://flagsapi.com/US/flat/64.png" alt="country flag" class="flag-img" />
+                            <h1 class="ms-2">USD</h1>
+                        </div>
+                    </div>
+                    <div class="flex justify-center  ">
+                        <label for="from-option" class="dropdown-label mt-2 label font-bold" id="from-label">To:</label>
+                        <div class="select-wrapper mt-7 ">
+                            <img src="https://flagsapi.com/IN/flat/64.png" alt="country flag" class="flag-img" />
+                            <h1 class="ms-2">India</h1>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="font-bold text-[2rem] mx-10 text-center">OR</h1>
+                <div class="dropdown-div mx-24 flex justify-between" id="from-dropdown-div">
+                    <div class="flex justify-center  ">
+                        <label for="from-option" class="dropdown-label mt-2 absolute label font-bold "
+                            id="from-label">From:</label>
+                        <div class="select-wrapper mt-7 ">
+                            <img src="https://flagsapi.com/IN/flat/64.png" alt="country flag" class="flag-img" />
+                            <h1 class="ms-2">India</h1>
+                        </div>
+                    </div>
+                    <div class="flex justify-center  ">
+                        <label for="from-option" class="dropdown-label mt-2 label font-bold" id="from-label">To:</label>
+                        <div class="select-wrapper mt-7 ">
+                            <img src="https://flagsapi.com/US/flat/64.png" alt="country flag" class="flag-img" />
+                            <h1 class="ms-2">USD</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="ms-[8rem] rounded mt-5 flex justify-center'">
+                    <button class="btn">
+                        Convert to INR
+                    </button>
+                </div>
+                <div class="ms-[8rem] rounded mt-5 flex justify-center'">
+                    <button class="btn-1">
+                        Convert to USD
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" ></script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+  }
+  
+  .background {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5.6rem;
+    font-size: 1.8rem;
+    background-color: #B1A9B1;
+  }
+  
+  .facts {
+    /* padding: 3.6rem 5.2rem; */
+    height: 200px;
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #56405a;
+    color: white;
+    font-weight: 400;
+    font-size: 2.4rem;
+    width: 40%;
+    text-align: center;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+  }
+  
+  .btn {
+    margin-top : 50px;
+    border: 2px solid #56405a;
+    color: #56405a;
+    padding: 1.2rem 2.4rem;
+    cursor: pointer;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    font-weight: 600;
+  }
+  
+  .btn:hover {
+    
+    background-color: #56405a;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .mk-link {
+    position: fixed;
+    bottom: 4rem;
+    cursor: pointer;
+  }
+  
+  .mk-logo {
+    width: 100px;
+  }

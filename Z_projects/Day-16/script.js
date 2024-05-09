@@ -11,6 +11,10 @@ let userScore = 0;
 let compScore = 0;
 
 choicesEl.forEach((choice) => {
+  choice.addEventListener('click')
+})
+
+choicesEl.forEach((choice) => {
   choice.addEventListener("click", () => {
     const userChoice = choice.getAttribute("id");
     playGame(userChoice);

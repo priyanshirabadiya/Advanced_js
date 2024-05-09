@@ -1,0 +1,30 @@
+body{
+    font-family: sans-serif;
+}
+
+.text{
+    margin-top: 20px;
+    background-color: #B1A9B1;
+    border: 2px solid saddlebrown;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+input[type = "text"]:focus{
+    border: 2px solid saddlebrown;
+    outline: none;
+}
+
+.btn{
+    background-color: #56405a;
+    height: 50px;
+    width: 200px;
+    color: white;
+}
+
+.btn-1{
+    background-color: #56405a;
+    height: 50px;
+    width: 200px;
+    color: white;
+}
