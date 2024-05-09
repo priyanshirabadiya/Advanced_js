@@ -1,53 +1,25 @@
-// const buttonEl = document.querySelector(".button");
-// const backgroundEl = document.querySelector(".background");
-// const imageEl = document.querySelector(".mk-logo");
+const bodymain = document.querySelector('body')
+const btnlight = document.querySelector('.whitebtn')
+let currenmode = 'light'
 
-// let currentMode = "light";
-
-// const changeDarkMode = function () {
-//   buttonEl.classList.add("dark-button");
-//   backgroundEl.classList.add("dark-background");
-//   currentMode = "dark";
-// };
-// const changeLightMode = function () {
-//   buttonEl.classList.remove("dark-button");
-//   backgroundEl.classList.remove("dark-background");
-//   currentMode = "light";
-// };
-
-// buttonEl.addEventListener("click", () => {
-//   if (currentMode === "light") {
-//     changeDarkMode();
-//   } else {
-//     changeLightMode();
-//   }
-// }); 
-
-
-
-let btn = document.querySelector('.btn');
-let bg = document.querySelector('.main');
-
-let currentMode = "dark"
-
-let dark = () => {
-    btn.classList.add('black-btn');
-    bg.classList.add('bg-yellow');
-    currentMode = "light";
+const changedarkmode = () => {
+    bodymain.style.backgroundColor = "black";
+    btnlight.classList.add('.dark-button');
+    currenmode = "dark"
 }
 
-let light = () => {
-    btn.classList.remove('black-btn');
-    bg.classList.remove('bg-yellow');
-    currentMode = "dark"
+const changewhitemode = () => {
+    bodymain.style.backgroundColor = "white";
+    btnlight.classList.remove('.dark-button');
+    currenmode = "light"
 }
 
-btn.addEventListener("click", () => {
-    if (currentMode == 'dark') {
-        dark();
+btnlight.addEventListener('click',() => {
+    if(currenmode === 'light'){
+        changedarkmode();
     }
-    else {
-        light();
+    else{
+        changewhitemode();
     }
-}
-)
+})
+
