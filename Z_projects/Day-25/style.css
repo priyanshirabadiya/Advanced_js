@@ -1,30 +1,80 @@
-body{
+body {
     font-family: sans-serif;
 }
 
-.text{
+.text {
     margin-top: 20px;
-    background-color: #B1A9B1;
-    border: 2px solid saddlebrown;
+    background-color: rgb(195, 244, 253);
+    border: 2px solid rgb(90, 211, 236);
     padding: 10px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
 }
-input[type = "text"]:focus{
-    border: 2px solid saddlebrown;
+
+input[type="text"]:focus {
     outline: none;
+    border: none;
 }
 
-.btn{
-    background-color: #56405a;
-    height: 50px;
-    width: 200px;
-    color: white;
+.mainb {
+    margin-top: 100px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
 }
 
-.btn-1{
-    background-color: #56405a;
+.btn {
+    background-color: rgb(90, 211, 236);
     height: 50px;
     width: 200px;
-    color: white;
+    color: #000;
+    margin-left: 17rem;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.btn-1 {
+    background-color: rgb(90, 211, 236);
+    height: 50px;
+    width: 200px;
+}
+
+select {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.to {
+    font-size: 1.5rem;
+
+}
+
+.country {
+    padding: 15px 20px 15px 20px;
+    overflow: scroll;
+}
+
+select option {
+    height: 50px !important;
+}
+
+.country option {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 12px;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.country {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.country option:checked {
+    background-color: #f0f0f0;
+    color: #000;
+    font-weight: bold;
 }
