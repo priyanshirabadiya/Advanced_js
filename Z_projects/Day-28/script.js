@@ -16,3 +16,4 @@ blankSpaceEl.addEventListener("click", () => {
 closeBtnEl.addEventListener("click", () => {
     showCloseModal();
 });
+

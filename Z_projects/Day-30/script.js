@@ -19,9 +19,9 @@ const replaceCharacters = () => {
   ind = ind.replaceAll("C", "%");
   ind = ind.replaceAll("G", "$");
   ind = ind.replaceAll("H", "{");
-  ind = ind.replaceAll("I", "}");
   ind = ind.replaceAll("4", "=");
   ind = ind.replaceAll("8", "*");
   ind = ind.replaceAll("6", "-");
   ind = ind.replaceAll("3", "#");
 }
+

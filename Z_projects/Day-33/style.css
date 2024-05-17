@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .background {
+    width: 100%;
+    height: 100%;
+    background-color: gainsboro ;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main-container {
+    margin-top: 8rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .primary-heading {
+    color: #191825;
+    font-size: 6.4rem;
+    font-weight: 700;
+    margin-bottom: 2.4rem;
+  }
+
+  .countdown-2 {
+    text-align: center;
+    width: 52rem;
+    font-size: 4.8rem;
+    font-weight: 900;
+    padding: 1.2rem 2.4rem;
+    background-color: #191825a3;
+    margin-top: 1.2rem;
+    color: rgb(202, 200, 200);
+  }
+
+  .countdown {
+    text-align: center;
+    /* width: 40rem; */
+    font-size: 4.8rem;
+    font-weight: 900;
+    padding: 1.2rem 2.4rem;
+    background-color: #191825a3;
+    margin-top: 1.2rem;
+    color: rgb(202, 200, 200);
+  }
+  .times {
+    font-size: 6.2rem;
+  }
